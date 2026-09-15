@@ -1,0 +1,57 @@
+# ==============================
+# Confidential Survey of India Data
+# ==============================
+
+*.xlsx
+*.xls
+*.csv
+
+# Data folders
+data/*.xlsx
+data/*.xls
+data/*.csv
+
+
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+
+# ==============================
+# Virtual Environment
+# ==============================
+
+venv/
+.venv/
+env/
+
+
+# ==============================
+# Environment & Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+
+# ==============================
+# OS Generated Files
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+
+# ==============================
+# Temporary / Output Files
+# ==============================
+
+output/
+outputs/
+*.tmp
+*.temp
