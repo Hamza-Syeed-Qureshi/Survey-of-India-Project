@@ -1,4 +1,9 @@
+# Data Analysis and Processing
 pandas
 numpy
+
+# Jupyter Notebook Environment
 jupyter
+
+# Excel File Processing
 openpyxl
