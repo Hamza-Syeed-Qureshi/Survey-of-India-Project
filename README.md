@@ -1,77 +1,79 @@
-# Dataset Information
+# Survey of India Multi-State Station Data Analysis
 
-## Overview
+A Python-based data processing and validation project developed for
+analyzing Survey of India station-based file data across multiple
+states and regions.
 
-This project uses Survey of India station-based data for data
-processing, validation, transformation, and analysis.
+The project focuses on organizing file-level information, validating
+file naming patterns, checking station and date information, identifying
+data quality issues, and generating station-wise and daily-wise reports.
 
-The dataset contains information related to multiple stations and
-regions and was used for performing station-wise, date-wise, and
-file-level analysis.
+---
 
-## Data Confidentiality
+## 📌 Project Overview
 
-The original Survey of India dataset used during the development of
-this project is confidential/restricted and is therefore **not included
-in this GitHub repository**.
+This project provides a structured workflow for processing Survey of
+India station data using Python and Pandas.
 
-The dataset remains in the authorized local working environment and
-has not been redistributed through this repository.
+The workflow works with file metadata and station information to perform
+date-based filtering, station identification, state-wise filtering,
+file validation, file-size analysis, Julian-date validation, and
+daily/station-wise reporting.
 
-No confidential Excel, CSV, or other raw data files are included in
-this project.
+The original source dataset is confidential/restricted and is therefore
+not included in this repository.
 
-## How the Dataset Was Used
+---
 
-The authorized local dataset was used for operations such as:
+## 🎯 Objectives
 
-- Loading and processing data using Python
-- Filtering data based on dates
-- Extracting dates and information from file paths
-- Identifying and processing station codes
-- Mapping stations with their respective regions/states
-- Processing file metadata
-- Validating files
-- Identifying invalid or missing files
-- Performing station-wise analysis
-- Performing daily-wise analysis
-- Creating summary tables and analysis outputs
+The main objectives of this project are:
 
-## Technologies Used for Data Processing
+- Process station-based file information efficiently
+- Filter data according to a specified date range
+- Extract dates from file paths
+- Extract station codes from file names
+- Map station information with states/regions
+- Validate file naming patterns
+- Identify invalid or non-matching files
+- Identify files with unusually low file sizes
+- Check duplicate/file-level information
+- Validate Julian date codes
+- Analyze daily file distribution
+- Perform station-wise analysis
+- Generate summary reports for further analysis
 
-The analysis was developed using:
+---
 
-- Python
-- Pandas
-- NumPy
-- Regular Expressions
-- Jupyter Notebook
-- OpenPyXL
+## 🔄 Project Workflow
 
-## Running the Project
+The overall workflow follows these steps:
 
-The notebook included in this repository contains the data-processing
-and analysis workflow.
-
-To run the project, users must provide their own authorized dataset
-and configure the required local file paths according to their
-environment.
-
-The original Survey of India dataset cannot be obtained from this
-repository.
-
-## Important Notice
-
-This repository contains the analysis code and documentation only.
-
-The original Survey of India data is confidential/restricted and is
-not redistributed, uploaded, or shared through this repository.
-
-Users should only use datasets that they are authorized to access and
-process.
-
-## Repository Scope
-
-This repository is intended to demonstrate the data-processing,
-validation, transformation, and analytical workflow developed during
-the project without exposing confidential source data.
+```text
+Raw File Metadata
+       ↓
+Data Loading
+       ↓
+Date Filtering
+       ↓
+Date Extraction from File Paths
+       ↓
+Station Code Extraction
+       ↓
+State/Region Filtering
+       ↓
+File Extension Identification
+       ↓
+File Name Pattern Validation
+       ↓
+Valid / Invalid File Analysis
+       ↓
+File Size Analysis
+       ↓
+Julian Date Validation
+       ↓
+Daily File Distribution
+       ↓
+Station-wise Analysis
+       ↓
+Summary Reports
